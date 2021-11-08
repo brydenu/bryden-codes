@@ -1,0 +1,11 @@
+.canvas {
+    background-color: skyblue;
+    width: 75%;
+    border: 1px solid orange;
+    border-radius: 10px;
+    height: 100%;
+    margin: 3vh 3vw 6vh;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+}
