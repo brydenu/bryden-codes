@@ -1,5 +1,5 @@
 import React from "react";
-import Canvas from "../Components/Canvas";
+// import Canvas from "../Components/Canvas";
 import Card from "../Components/Card";
 import "../styles/PostsIndex.css";
 
