@@ -1,9 +1,6 @@
 import React from "react";
+import { About } from "../Components";
 
-export default function About() {
-    return (
-        <div>
-            <p>This the About page being rendered.</p>
-        </div>
-    );
+export default function AboutPage() {
+    return <div>Hello</div>;
 }

@@ -1,9 +1,6 @@
 import React from "react";
+import { Post } from "../Components";
 
-export default function Post() {
-    return (
-        <div>
-            <p>This is a post page being rendered.</p>
-        </div>
-    );
+export default function PostPage() {
+    return <Post />;
 }

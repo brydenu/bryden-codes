@@ -1,12 +1,10 @@
 import React from "react";
-import "../styles/Footer.css";
+import "./Footer.scss";
 
-const Footer = () => {
+export function Footer() {
     return (
         <div className="footer">
             <p>Developed by Bryden Uyehara</p>
         </div>
     );
-};
-
-export default Footer;
+}
