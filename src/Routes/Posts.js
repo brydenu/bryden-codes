@@ -1,9 +1,9 @@
 import React from "react";
 // import Canvas from "../Components/Canvas";
 import Card from "../Components/Card";
-import "../styles/PostsIndex.css";
+import "../styles/Posts.css";
 
-export default function PostIndex() {
+export default function Posts() {
     const cardHeader = {
         title: "Posts",
         subtitle:

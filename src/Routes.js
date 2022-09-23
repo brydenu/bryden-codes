@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Routes/Home.js";
 import Post from "./Routes/Post.js";
-import PostsIndex from "./Routes/PostsIndex.js";
+import Posts from "./Routes/Posts.js";
 import About from "./Routes/About.js";
 import Canvas from "./Components/Canvas.js";
 
@@ -14,7 +14,7 @@ const Routes = () => {
                     <Post />
                 </Route>
                 <Route exact path="/posts">
-                    <PostsIndex />
+                    <Posts />
                 </Route>
                 <Route exact path="/about">
                     <About />
