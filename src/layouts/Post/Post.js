@@ -1,9 +1,10 @@
 import React from "react";
-import { Post, Footer } from "components";
+import { Post, Footer, Navbar } from "components";
 
 export default function PostPage() {
     return(
     <>
+        <Navbar />
         <header></header>
         <main>
             <Post />

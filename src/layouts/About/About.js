@@ -1,9 +1,10 @@
 import React from "react";
-import { About, Footer } from "components";
+import { About, Footer, Navbar } from "components";
 
 export default function AboutPage() {
     return (
     <>
+        <Navbar />
         <header></header>
         <main>
             <About />

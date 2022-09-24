@@ -1,9 +1,10 @@
 import React from "react";
-import { Home, Footer } from "../../components";
+import { Home, Footer, Navbar } from "components";
 
 export default function HomePage() {
     return (
     <>
+        <Navbar />
         <header></header>
         <main>
             <Home />
