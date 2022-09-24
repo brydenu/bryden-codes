@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { About, Home, Post, Posts } from "./Routes/index";
+import { About, Home, Post, Posts } from "./layouts/index";
 
 const Routes = () => {
     return (

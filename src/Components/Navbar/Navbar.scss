@@ -1,7 +1,9 @@
+@use "styles" as *;
+
 .navbar {
-    background-color: darkblue;
-    border-bottom: 2px solid orange;
-    position: fixed;
+    background-color: $primary;
+    border-bottom: 1px solid $secondary;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -16,20 +18,26 @@
 }
 
 .navbar > a {
-    color: white;
-    text-decoration: none;
-    background-color: skyblue;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    transition: 200ms;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $text-color;
+    text-decoration: none;
+    background-color: $primary;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: 200ms;
+
+    &:first-of-type, &:nth-of-type(2) {
+        border-right: 1px solid $secondary;
+    }
+
+    &:last-of-type, &:nth-of-type(2) {
+        border-left: 1px solid $secondary;
+    }
 }
 
 .navbar > a:hover {
-    background-color: orange;
+    background-color: $secondary;
 }

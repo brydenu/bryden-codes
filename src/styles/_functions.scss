@@ -1,0 +1,15 @@
+@use "sass:math";
+
+$defaultFontSize: 18px;
+
+@function pxToRem($pxList) {
+  $returnVal: ();
+  @for $i from 1 through length($pxList) {
+    @if (nth($pxList, $i) != 0) {
+      $returnVal: append($returnVal, math.div(nth($pxList, $i), $defaultFontSize) * 1rem);
+    } @else {
+      $returnVal: append($returnVal, 0rem);
+    }
+  }
+  @return $returnVal;
+}
