@@ -5,9 +5,7 @@ import "./App.scss";
 function App() {
     return (
         <BrowserRouter>
-            <div className="App">
-                <Routes />
-            </div>
+            <Routes />
         </BrowserRouter>
     );
 }

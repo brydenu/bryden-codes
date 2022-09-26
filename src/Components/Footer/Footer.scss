@@ -1,23 +1,38 @@
 @use "styles" as *;
 
 .footer {
-    background-color: $primary;
+    background-color: $dark;
+    background: url("~images/backgrounds/footer-bg.jpg") no-repeat center bottom;
+    background-size: cover;
     color: $text-color;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    height: 15vh;
-    left: 0;
-    border-top: 1px solid $secondary;
-    bottom: 0;
+    height: 40vh;
+    padding-top: 3rem;
+    border-top: 1px solid $light;
+    border-bottom: 3px solid $dark;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    z-index: 10;
 
-    & > a {
-        color: white;
+    &-content {
+        padding: .5rem 0;
+        background-color: rgba(30,30,30,.4);
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    a {
+        color: $light;
+        
+        &:hover {
+            cursor: pointer;
+        }
         &:visited {
-            color: white;
+            color: $light;
         }
     }
 }

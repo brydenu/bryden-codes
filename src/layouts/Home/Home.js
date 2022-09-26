@@ -4,9 +4,11 @@ import { Home, Footer, Navbar, Header } from "components";
 export default function HomePage() {
 
     const title = (
-        <>
-            <h1>Welcome to Bryden's (kind of) Portfolio Website!</h1>
-        </>
+        <h1>
+            <div>Welcome to Bryden's</div>
+            <div>(kind of)</div>
+            <div>Portfolio Website</div>
+        </h1>
     );
 
     const subtitle = (
@@ -32,15 +34,9 @@ export default function HomePage() {
     return (
     <>
         <Navbar />
-        <header className="header-wrapper home-header-wrapper">
-            <Header type={"home"} title={title} subtitle={subtitle} content={content} />
-        </header>
-        <main>
-            <Home />
-        </main>
-        <footer>
-            <Footer />
-        </footer>
+        <Header type={"home"} title={title} subtitle={subtitle} content={content} />
+        <Home />
+        <Footer />
     </>
     );
 }

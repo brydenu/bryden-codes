@@ -1,20 +1,21 @@
 @use "styles" as *;
 
 .navbar {
-    background-color: $primary;
-    border-bottom: 1px solid $secondary;
+    background-color: $dark;
+    border-bottom: 1px solid $light;;
     position: sticky;
     left: 0;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 30px;
+    height: $nav-height;
     min-height: 20px;
     align-items: center;
     align-content: center;
     text-align: center;
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+    z-index: 99;
 }
 
 .navbar > a {
@@ -23,21 +24,30 @@
     justify-content: center;
     color: $text-color;
     text-decoration: none;
-    background-color: $primary;
+    background-color: $dark;
+    background: url("~images/backgrounds/comic-bg-dark.jpg") no-repeat center center;
+    background-size: 100%;
     overflow: hidden;
     height: 100%;
     width: 100%;
-    transition: 200ms;
+    transition: 300ms;
+
+    &:hover {
+        cursor: pointer;
+        background-size: 400%;
+
+    }
 
     &:first-of-type, &:nth-of-type(2) {
-        border-right: 1px solid $secondary;
+        border-right: 1px solid $light;;
     }
 
     &:last-of-type, &:nth-of-type(2) {
-        border-left: 1px solid $secondary;
+        border-left: 1px solid $light;;
     }
 }
 
 .navbar > a:hover {
-    background-color: $secondary;
+    background-color: $light;
+
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import griffey from "images/pictures/griffey.png";
 import "./Home.scss";
 
 export function Home() {
@@ -8,7 +9,7 @@ export function Home() {
                 <div>
                     This website is still being developed, so for now, here is a picture of my really cool dog, Griffey :)
                 </div>
-                <img src={"/src/images/pictures/griffey.png"} alt="Bryden's dog Griffey. Griffey is a really good boy." />
+                <img className="griffey" src={griffey} alt="Bryden's dog Griffey. Griffey is a really good boy." />
             </div>
         </div>
     );

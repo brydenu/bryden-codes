@@ -1,1 +1,51 @@
 @use "styles" as *;
+
+.header {
+  min-height: 60vh;
+  padding: 5rem 5rem 0;
+  border-bottom: 1px solid $light;
+  
+  &-generic {
+    background: url("~images/backgrounds/comic-bg-primary.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  &-home {
+    background: url("~images/backgrounds/top-view-desk-bg.jpg") no-repeat center center;
+    background-size: 140%;
+    background-position: bottom;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 3rem;
+  }
+
+  &-title {
+    h1 {
+      font-size: $h1-font-size;
+      font-family: $h1-font-family; 
+      color: black;
+
+      div {
+        border-bottom: 1px solid blue;
+      }
+    }
+  }
+
+  &-subtitle {
+    font-size: pxToRem(24px);
+  }
+
+  &-content {
+
+  }
+}
+
+.notepad {
+  background-color: rgba(250,244,65);
+  border-radius: 5px;
+}

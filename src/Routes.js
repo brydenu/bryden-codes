@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { About, Home, Post, Posts } from "./layouts/index";
+import { About, Home, Post, Posts, Credits } from "./layouts/index";
 
 const Routes = () => {
     return (
@@ -13,6 +13,9 @@ const Routes = () => {
             </Route>
             <Route exact path="/about">
                 <About />
+            </Route>
+            <Route exact path="/credits">
+                <Credits />
             </Route>
             <Route exact path="/">
                 <Home />

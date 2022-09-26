@@ -1,3 +1,20 @@
-$primary: #202F77;
-$secondary: white;
+@use "./functions" as *;
+
+$h1-font-family: 'Courier New', Courier, monospace;
+
+// Colors
+
+$primary: #1F2E77;
+$secondary: #2995D3;
+$accent:  #ffff99;
+$dark: #1E1E1E;
+$light: white;
+
 $text-color: white;
+
+// Sizes
+$nav-height: 5vh;
+$header-height: 60vh;
+$footer-height: 15vh;
+
+$h1-font-size: pxToRem(60px);

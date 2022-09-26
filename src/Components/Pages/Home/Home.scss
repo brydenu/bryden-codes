@@ -1,1 +1,17 @@
 @use "styles" as *;
+
+.home {
+  padding-top: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: $secondary;
+}
+
+.griffey {
+  max-height: 50vh;
+  width: max-content;
+  margin: 5rem;
+  border: 1px solid $light;;
+  border-radius: 4px;
+}
