@@ -18,34 +18,47 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+    align-items: center;
 
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 3rem;
+    font-family: $header-font-family;
   }
 
   &-title {
     h1 {
       font-size: $h1-font-size;
-      font-family: $h1-font-family; 
-      color: black;
+    }
 
-      div {
-        border-bottom: 1px solid blue;
-      }
+    &-home {
+      color: $accent;
+      text-align: center;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      width:fit-content;
+      padding: 0 1rem;
     }
   }
 
   &-subtitle {
-    font-size: pxToRem(24px);
+    font-size: pxToRem(48px);
+
+    &-home {
+      text-align: center;
+      color: black;
+      margin: .5rem;
+    }
   }
 
   &-content {
+    font-size: pxToRem(32px);
+    color: black;
 
+    &-home {
+      background-color: rgba(250,250,250,.3);
+      border-radius: 4px;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
   }
-}
-
-.notepad {
-  background-color: rgba(250,244,65);
-  border-radius: 5px;
 }

@@ -9,9 +9,11 @@ html,
     min-height: 100vh;
     font-family: "Arial";
     background-color: $dark;
+    font-size: $default-font-size;
 }
 
 main {
-    margin: 0 5rem;
+    margin: 0;
+    padding: 0;
     min-height: calc(100vh - $footer-height - $nav-height);
 }

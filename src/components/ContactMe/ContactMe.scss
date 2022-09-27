@@ -1,0 +1,151 @@
+@use "styles" as *;
+
+.contact {
+  background-color: white;
+  color: black;
+  width: 50vw;
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  &-header {
+    h3 {
+      font-size: $h3-font-size;
+      font-family: $header-font-family;
+      padding: 0;
+      margin: 1rem 0;
+      border-bottom: 2px solid $secondary;
+    }
+
+    p {
+      font-size: $default-font-size;
+      line-height: pxToRem(30px);
+    }
+  }
+
+  &-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+
+    &-info {
+      width: 100%;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+  }
+
+  &-form-group {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 4px;
+    width: 40%;
+
+    label {
+      font-weight: bold;
+      font-size: $form-label-font-size;
+    }
+
+    input, select {
+      transition-duration: 200ms;
+      font-size: $form-input-font-size;
+      width: 100%;
+      min-height: 40px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 2px 4px;
+
+      &:hover {
+        border: 1px solid $secondary;
+      }
+
+      &:focus {
+        border: 1px solid $secondary;
+        outline: none;
+        box-shadow: 0 0 0 1px $secondary;
+      }
+    }
+  }
+
+  &-select-group {
+    width: 20%;
+
+    select:hover {
+      cursor: pointer;
+    }
+
+    option:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-message-group {
+    width: 100%;
+    gap: 4px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    label {
+      font-weight: bold;
+      font-size: $form-label-font-size;
+    }
+
+    input {
+      width: 100%;
+      min-height: max(10vh, 80px);
+      border: 1px solid black;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: $default-font-size;
+      transition-duration: 200ms;
+
+      &:hover {
+        border: 1px solid $secondary;
+      }
+
+      &:focus {
+        border: 1px solid $secondary;
+        outline: none;
+        box-shadow: 0 0 0 1px $secondary;
+      }
+    }
+  }
+
+  &-button-group {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+    button {
+      min-width: 20%;
+      min-height: 40px;
+      font-size: pxToRem(26px);
+      font-weight: bold;
+      background-color: $secondary;
+      background-size: auto;
+      border: 2px solid primary;
+      border-radius: 4px;
+      color: white;
+      box-sizing: border-box;
+      transition-duration: 200ms;
+
+      &:hover {
+        cursor: pointer;
+        background-size: 300% 400%;
+
+        background-color: $primary;
+      }
+    }
+  }
+}

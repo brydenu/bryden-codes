@@ -1,6 +1,6 @@
 @use "sass:math";
 
-$defaultFontSize: 18px;
+$defaultFontSize: 20px;
 
 @function pxToRem($pxList) {
   $returnVal: ();

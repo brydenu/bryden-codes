@@ -1,5 +1,7 @@
 import React from "react";
 import { Home, Footer, Navbar, Header } from "components";
+import Layout from "../Layout";
+import "./Home.scss";
 
 export default function HomePage() {
 
@@ -11,32 +13,14 @@ export default function HomePage() {
         </h1>
     );
 
-    const subtitle = (
-        <>
-            <div>
-                Avid gamer, programmer, sports fan, and more!
-            </div>
-        </>
-    );
+    const subtitle = "Programmer, gamer, sports fan.";
+    const content = "This is a website I hope to be a central hub of any other side projects I make, as well as a blog for any tech-related things I would want to write about. I hope to add plenty of content here to make a complete feeling website!";
 
-    const content = (
-        <>
-            <div>
-                This is a website I hope to be a central hub of any other
-                side projects I make, as well as a blog for any tech-related
-                things I would want to write about. I hope to add plenty of
-                content here to make a complete feeling website!
-            </div>
-        </>
-    )
-
+    const headerProps = { type: "home", title, subtitle, content };
 
     return (
-    <>
-        <Navbar />
-        <Header type={"home"} title={title} subtitle={subtitle} content={content} />
-        <Home />
-        <Footer />
-    </>
+        <Layout headerProps={headerProps}>
+            <Home />
+        </Layout>
     );
 }

@@ -1,1 +1,16 @@
 @use "styles" as *;
+
+.notepad {
+  background-color: rgba(250,244,65);
+  border-radius: 5px;
+  border: 1px solid black;
+
+  &-line {
+    border-bottom: 1px solid blue; 
+  }
+  
+  &-text {
+    margin-left: 3rem;
+    color: black;
+  }
+}

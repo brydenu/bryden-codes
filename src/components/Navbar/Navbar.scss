@@ -16,6 +16,10 @@
     text-align: center;
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
     z-index: 99;
+    font-family: $header-font-family;
+    font-size: pxToRem(32px);
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .navbar > a {
@@ -35,7 +39,7 @@
     &:hover {
         cursor: pointer;
         background-size: 400%;
-
+        letter-spacing: 4px;
     }
 
     &:first-of-type, &:nth-of-type(2) {
