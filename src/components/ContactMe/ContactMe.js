@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import "./ContactMe.scss";
 
 export function ContactMe() {
-  const [reason, setReason] = useState(null);
+  // const [reason, setReason] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
