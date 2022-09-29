@@ -1,0 +1,1 @@
+export { cutoffText } from "./cutoffText";

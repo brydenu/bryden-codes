@@ -1,0 +1,49 @@
+@use "styles" as *;
+
+.post-preview {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid $secondary;
+  border-radius: 4px;
+  background-color: white;
+  transition-duration: 200ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: translate(5px, -5px);  
+  }
+
+  &-title {
+    font-size: pxToRem(32px);
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid $secondary;
+  }
+
+  &-body {
+    color: grey;
+    font-size: pxToRem(22px);
+  }
+
+  &-timestamp {
+    color: grey;
+    font-size: pxToRem(16px);
+  }
+
+  &-tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+  }
+
+  &-tag {
+    border-radius: 4px;
+    background-color: $primary;
+    color: white;
+    padding: 5px 10px;
+  }
+}

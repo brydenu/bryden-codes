@@ -1,1 +1,43 @@
 @use "styles" as *;
+
+.posts {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2rem;
+
+
+  &-list {
+    min-height: 100vh;
+    margin: 2rem;
+    margin-left: 6rem;
+    width: 85%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &-index {
+    border: 1px solid $secondary;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 2rem 6rem 2rem 0;
+    background-color: white; 
+    width: 15%;
+    height: fit-content;
+    position: sticky;
+
+    &-title {
+      color: black;
+      font-weight: bold;
+      border-bottom: 1px solid $secondary;
+      margin-bottom: 1rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1rem;
+    }
+  }
+}

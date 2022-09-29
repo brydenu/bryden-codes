@@ -7,12 +7,16 @@ export function Header({ type = "generic", title, subtitle, content }) {
         <div className={`header-title header-title-${type}`}>
           {title}
         </div>
-        <div className={`header-subtitle header-subtitle-${type}`}>
-          {subtitle}
-        </div>
-        <div className={`header-content header-content-${type}`}>
-          {content}
-        </div>
+        {!!subtitle && 
+          <div className={`header-subtitle header-subtitle-${type}`}>
+            {subtitle}
+          </div>
+        }
+        {!!content &&
+          <div className={`header-content header-content-${type}`}>
+            {content}
+          </div>
+        }
       </header>
   )
 }

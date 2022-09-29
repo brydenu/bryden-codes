@@ -1,17 +1,16 @@
 import React from "react";
-import { About, Footer, Navbar } from "components";
+import { About } from "components";
+import Layout from "layouts/Layout";
 
 export default function AboutPage() {
+    const title = <h1>About Me</h1>
+    const subtitle = "Nice to meet you.";
+
+    const headerProps = { type: "about", title, subtitle };
+
     return (
-    <>
-        <Navbar />
-        <header></header>
-        <main>
+        <Layout headerProps={headerProps}>
             <About />
-        </main>
-        <footer>
-            <Footer />
-        </footer>
-    </>
+        </Layout>
     );
 }

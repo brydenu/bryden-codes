@@ -30,8 +30,16 @@ export function Credits() {
           <td><a href="https://www.freepik.com/free-vector/office-workplace-interior-with-computer-table_7773421.htm#query=project&position=6&from_view=search">Freepik</a></td>
         </tr>
         <tr>
-          <td>Top view of desk image (home header image)</td>
+          <td>Top view of desk image (/ header image)</td>
           <td><a href="https://www.freepik.com/free-vector/workplace-top-view-office-desk-work-space-with-coffee-cup-crumbled-cookie-potted-plant-mobile-phone-document-around-laptop-work-place-with-glasses-stationery-cartoon-illustration_10308094.htm#query=desk&position=9&from_view=search">Freepik</a></td>
+        </tr>
+        <tr>
+          <td>Typing on laptop with ideas surrounding (/posts header image)</td>
+          <td><a href="https://www.freepik.com/free-vector/business-hands-flat_3948518.htm#query=typing&position=5&from_view=search">Freepik</a></td>
+        </tr>
+        <tr>
+          <td>Person out of frame using laptop with crossed legs and coffee (/about header image)</td>
+          <td><a href="https://www.freepik.com/free-vector/online-learning_1250643.htm#page=3&query=programmer&position=25&from_view=search">Freepik</a></td>
         </tr>
         {/* <tr>
           <td></td>
