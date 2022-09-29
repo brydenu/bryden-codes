@@ -47,6 +47,7 @@
     align-items: flex-start;
     gap: 4px;
     width: 40%;
+    justify-content: flex-end;
 
     label {
       font-weight: bold;
@@ -56,6 +57,7 @@
     input, select {
       transition-duration: 200ms;
       font-size: $form-input-font-size;
+      background-color: white;
       width: 100%;
       min-height: 40px;
       box-sizing: border-box;
