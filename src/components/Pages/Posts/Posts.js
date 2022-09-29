@@ -8,7 +8,7 @@ export function Posts() {
     const [showing, setShowing] = useState({"num": 5, posts: []});
     const { posts } = data;
 
-    useEffect(setShowing({"num": 5, posts: posts.slice(0, 5)}), [posts]);
+    useEffect(() => (setShowing({"num": 5, posts: posts.slice(0, 5)})), [posts]);
 
     const handleShowMore = () => {
         setShowing((current) => ({"num": current.num + 5, "posts": posts.slice(0, current.num + 5)}));
