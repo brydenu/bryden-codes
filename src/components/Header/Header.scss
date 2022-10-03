@@ -8,6 +8,10 @@
   display: flex;
   flex-flow: column nowrap;
   font-family: $header-font-family;
+
+  @include breakpoint(sm) {
+    padding: 0;
+  }
   
   &-generic {
     background: url("~images/backgrounds/comic-bg-primary.jpg") no-repeat center center;
@@ -25,6 +29,12 @@
     padding-left: 20%;
     padding-right: 20%;
     font-family: $header-font-family;
+
+    @include breakpoint(sm) {
+      padding: 0;
+      background-size: cover;
+      background-position: right;
+    }
   }
 
   &-posts {
@@ -33,6 +43,11 @@
     background-position-y: -5rem;
 
     justify-content: flex-end;
+
+    @include breakpoint(sm) {
+      background-size: cover;
+      background-position: bottom;
+    }
   }
 
   &-about {
@@ -40,6 +55,10 @@
     background-size: 100%;
     
     justify-content: flex-end;
+
+    @include breakpoint(sm) {
+      background-size: cover;
+    }
   }
 
   &-title {
@@ -54,21 +73,37 @@
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       width:fit-content;
       padding: 0 1rem;
+
+      @include breakpoint(sm) {
+        margin-top: 10vh;
+        padding: 0;
+        // color: $primary;
+        text-shadow: -1px -1px 0 $secondary, 1px -1px 0 $secondary, -1px 1px 0 $secondary, 1px 1px 0 $secondary;
+      }
     }
 
     &-posts {
-      background-color: rgba(0,0,0,.5);
+      background-color: rgba(0,0,0, .5);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       padding: 0 2rem 0;
 
+      @include breakpoint(sm) {
+        margin-top: 5rem;
+
+      }
+
       h1 {
         margin: 1rem 0;
-        
       }
 
     }
     &-about {
+      @include breakpoint(sm) {
+        h1 {
+          margin: 1rem 1rem .5rem;
+        }
+      }
     }
 
 
@@ -76,11 +111,19 @@
 
   &-subtitle {
     font-size: pxToRem(48px);
-
+      
     &-home {
       text-align: center;
       color: black;
       margin: .5rem;
+      font-weight: bold;
+
+      @include breakpoint(sm) {
+        background-color: rgba(black,.5);
+        color: white;
+        font-size: pxToRem(40px);
+        border-radius: 4px;
+      }
     }
 
     &-posts {
@@ -91,22 +134,37 @@
     }
 
     &-about {
+      @include breakpoint(sm) {
+        font-size: pxToRem(28px);
+        margin: 0 1rem .5rem;
+      }
     }
 
   }
 
   &-content {
-    font-size: pxToRem(32px);
+    font-size: pxToRem(24px);
     color: white;
-
+    
     &-home {
+      font-size: pxToRem(32px);
       background-color: rgba(250,250,250,.3);
       border-radius: 4px;
       padding: 1rem;
       margin-top: 1rem;
+      color: black;
+
+      @include breakpoint(sm) {
+        background-color: transparent;
+        font-size: pxToRem(26px);
+        color: white;
+        text-align: center;
+        margin-top: 8rem;
+      }
     }
 
     &-posts {
+      font-size: pxToRem(24px);
       background-color: rgba(0,0,0,.5);
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;

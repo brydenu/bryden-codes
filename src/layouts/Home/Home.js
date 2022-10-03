@@ -13,8 +13,8 @@ export default function HomePage() {
         </h1>
     );
 
-    const subtitle = "Programmer, gamer, sports fan.";
-    const content = "This is a website I hope to be a central hub of any other side projects I make, as well as a blog for any tech-related things I would want to write about. I hope to add plenty of content here to make a complete feeling website!";
+    const subtitle = "I am a programmer, gamer, and sports fan.";
+    const content = "This website will be a central hub of all other side projects I make, as well as a blog for any tech-related things I would want to write about. Be sure to check back often to keep up with my career as a developer!";
 
     const headerProps = { type: "home", title, subtitle, content };
 

@@ -45,6 +45,24 @@ export function Credits() {
           <td></td>
           <td><a href="">Freepik</a></td>
         </tr> */}
+        <h3>USED ON ADMIN PORTAL</h3>
+        <hr />
+        <tr>
+          <td>New Blog Post Icon</td>
+          <td><a target="_blank" rel="noreferrer" href="https://icons8.com/icon/EMfHtOm6xPEe/blog">Blog</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></td>
+        </tr>
+        <tr>
+          <td>Settings Nav Icon</td>
+          <td><a target="_blank" rel="noreferrer" href="https://icons8.com/icon/M9s3DeMEWotE/settings">Settings</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></td>
+        </tr>
+        <tr>
+          <td>Dark mode Nav Icon</td>
+          <td><a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mIcxKBPLQ9mu/dark-mode">Dark mode</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></td>
+        </tr>
+        {/* <tr>
+          <td></td>
+          <td></td>
+        </tr> */}
       </table>
     </div>
   )

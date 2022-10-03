@@ -29,7 +29,7 @@
   }
 
   &-index {
-    border: 1px solid $secondary;
+    border: 1px solid $primary;
     border-radius: 4px;
     padding: 1rem;
     margin: 2rem 6rem 2rem 0;
@@ -41,7 +41,7 @@
     &-title {
       color: black;
       font-weight: bold;
-      border-bottom: 1px solid $secondary;
+      border-bottom: 1px solid $primary;
       margin-bottom: 1rem;
     }
 

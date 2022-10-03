@@ -7,7 +7,7 @@
   margin-bottom: 2rem;
   gap: 1rem;
   padding: 1rem;
-  border: 1px solid $secondary;
+  border: 1px solid $primary;
   border-radius: 4px;
   background-color: white;
   transition-duration: 200ms;
@@ -21,7 +21,7 @@
     font-size: pxToRem(32px);
     font-weight: bold;
     color: black;
-    border-bottom: 1px solid $secondary;
+    border-bottom: 1px solid $primary;
   }
 
   &-body {
@@ -42,7 +42,7 @@
 
   &-tag {
     border-radius: 4px;
-    background-color: $primary;
+    background-color: $secondary;
     color: white;
     padding: 5px 10px;
   }

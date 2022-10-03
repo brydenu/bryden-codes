@@ -56,7 +56,7 @@ export function ContactMe() {
       </div>
       <div className="contact-message-group">
         <label htmlFor="message">Message</label>
-        <input required type="text" name="message" value={contact.message} onChange={handleChange} />
+        <textarea required type="text" name="message" value={contact.message} onChange={handleChange} />
       </div>
       <div className="contact-button-group">
         <button type="submit">Send</button>

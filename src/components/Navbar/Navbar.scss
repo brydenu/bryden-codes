@@ -20,6 +20,10 @@
     font-size: pxToRem(32px);
     font-weight: bold;
     letter-spacing: 3px;
+
+    @include breakpoint(sm) {
+        
+    }
 }
 
 .navbar > a {

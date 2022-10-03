@@ -5,7 +5,12 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: $secondary;
+  background-color: $primary;
+
+  @include breakpoint(sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .griffey {
