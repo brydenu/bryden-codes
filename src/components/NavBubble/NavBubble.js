@@ -22,10 +22,10 @@ export function NavBubble() {
       </div>
       <div className={`nav-bubble-menu-bg ${menuOpen}-menu-bg`} />
       <div className={`nav-bubble-menu-list ${menuOpen}-menu`}>
-        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="#">Home</a>
-        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="#">Posts</a>
-        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="#">About</a>
-        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="#">Credits/Attributions</a>
+        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/">Home</a>
+        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/posts">Posts</a>
+        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/about">About</a>
+        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/credits">Credits/Attributions</a>
       </div>
     </div>
   )

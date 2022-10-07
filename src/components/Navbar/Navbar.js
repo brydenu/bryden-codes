@@ -8,10 +8,10 @@ export function Navbar() {
             <Link to="/">
                 <div className="nav-link">Home</div>
             </Link>
-            <Link to="/Posts">
+            <Link to="/posts">
                 <div className="nav-link">Posts</div>
             </Link>
-            <Link to="/About">
+            <Link to="/about">
                 <div className="nav-link">About</div>
             </Link>
         </div>
