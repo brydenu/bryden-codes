@@ -1,12 +1,15 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { About, ContactMe, Credits, Home, Post, Posts, Projects } from "./layouts/index";
+import { About, Blog, ContactMe, Credits, Home, Post, Projects } from "./layouts/index";
 
 const Routes = () => {
     return (
         <Switch>
             <Route exact path="/about">
                 <About />
+            </Route>
+            <Route exact path="/blog">
+                <Blog />
             </Route>
             <Route exact path="/contact-me">
                 <ContactMe />
@@ -16,9 +19,6 @@ const Routes = () => {
             </Route>
             <Route exact path="/post/:id">
                 <Post />
-            </Route>
-            <Route exact path="/posts">
-                <Posts />
             </Route>
             <Route exact path="/projects">
                 <Projects />

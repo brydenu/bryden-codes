@@ -39,6 +39,8 @@
     height: 100%;
     width: 100%;
     transition: 300ms;
+    border-left: 1px solid $light;
+    border-right: 1px solid $light;
 
     &:hover {
         cursor: pointer;
@@ -46,12 +48,12 @@
         letter-spacing: 4px;
     }
 
-    &:first-of-type, &:nth-of-type(2) {
-        border-right: 1px solid $light;;
+    &:first-of-type {
+        border-left: none;
     }
 
-    &:last-of-type, &:nth-of-type(2) {
-        border-left: 1px solid $light;;
+    &:last-of-type {
+        border-right: none;
     }
 }
 
