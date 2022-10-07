@@ -69,21 +69,17 @@
     transform: rotate(0) translateX(0);
   }
 }
-// WAIT 500 ms first (out of 1.5s)
+
+
 @keyframes navitemappear1 {
   from {
     transform: translateY(0);
     opacity: 0;
   }
 
-  33% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-
-  66% {
+  50% {
     transform: translateY(-10px);
-    opacity: .5;
+    opacity: 1;
   }
 
   to {
@@ -91,21 +87,21 @@
     opacity: 1;
   }
 }
-// WAIT 700 ms
+// WAIT 200 ms
 @keyframes navitemappear2 {
   from {
     transform: translateY(0);
     opacity: 0;
   }
 
-  41% {
+  25% {
     transform: translateY(0);
     opacity: 0;
   }
 
-  71% {
+  63% {
     transform: translateY(-10px);
-    opacity: .5;
+    opacity: 1;
   }
 
   to {
@@ -113,20 +109,21 @@
     opacity: 1;
   }
 }
+// WAIT 400 ms
 @keyframes navitemappear3 {
   from {
     transform: translateY(0);
     opacity: 0;
   }
 
-  47% {
+  40% {
     transform: translateY(0);
     opacity: 0;
   }
 
-  73% {
+  70% {
     transform: translateY(-10px);
-    opacity: .5;
+    opacity: 1;
   }
 
   to {
@@ -134,20 +131,67 @@
     opacity: 1;
   }
 }
+
+//WAIT 600 ms
 @keyframes navitemappear4 {
   from {
     transform: translateY(0);
     opacity: 0;
   }
 
-  52% {
+  50% {
     transform: translateY(0);
     opacity: 0;
   }
 
-  76% {
+  75% {
     transform: translateY(-10px);
-    opacity: .5;
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+//WAIT 800ms
+@keyframes navitemappear5 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  57% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  79% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+//WAIT 1000ms
+@keyframes navitemappear6 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  63% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  82% {
+    transform: translateY(-10px);
+    opacity: 1;
   }
 
   to {
@@ -212,7 +256,7 @@
         right: 30px;
         top: 30px;
         border-radius: 50%;
-        transition-duration: 900ms;
+        transition-duration: 500ms;
         transition-delay: right 500ms top 500ms;
       }
 
@@ -228,15 +272,23 @@
           right: 5vw;
         }
         &:nth-of-type(2) {
-          top: 40vh;
-          right: 10vw;
+          top: 37vh;
+          right: 8vw;
         }
         &:nth-of-type(3) {
-          top: 50vh;
-          right: 15vw;
+          top: 44vh;
+          right: 11vw;
         }
         &:nth-of-type(4) {
-          top: 60vh;
+          top: 51vh;
+          right: 14vw;
+        }
+        &:nth-of-type(5) {
+          top: 58vh;
+          right: 17vw;
+        }
+        &:nth-of-type(6) {
+          top: 65vh;
           right: 20vw;
         }
       }
@@ -328,19 +380,27 @@
           visibility: visible;
           &:nth-of-type(1) {
             animation-name: navitemappear1;
-            animation-duration: 1.5s;
+            animation-duration: 600ms;
           }
           &:nth-of-type(2) {
             animation-name: navitemappear2;
-            animation-duration: 1.7s;
+            animation-duration: 800ms;
           }
           &:nth-of-type(3) {
             animation-name: navitemappear3;
-            animation-duration: 1.9s;
+            animation-duration: 900ms;
           }
           &:nth-of-type(4) {
             animation-name: navitemappear4;
-            animation-duration: 2.1s;
+            animation-duration: 1000ms;
+          }
+          &:nth-of-type(5) {
+            animation-name: navitemappear5;
+            animation-duration: 1100ms;
+          }
+          &:nth-of-type(6) {
+            animation-name: navitemappear6;
+            animation-duration: 1200ms;
           }
         }
       }

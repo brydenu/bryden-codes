@@ -20,4 +20,11 @@
   margin: 5rem;
   border: 1px solid $light;;
   border-radius: 4px;
+
+  @include breakpoint(sm) {
+    box-sizing: border-box;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
 }

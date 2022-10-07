@@ -1,4 +1,4 @@
-export { About, Home, Post, Posts, Credits } from "./Pages";
+export { About, Contact, Credits, Home, Post, Posts, Projects } from "./Pages";
 
 export { ContactMe } from "./ContactMe/ContactMe";
 export { Footer } from "./Footer/Footer";

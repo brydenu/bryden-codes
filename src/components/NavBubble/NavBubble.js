@@ -24,7 +24,9 @@ export function NavBubble() {
       <div className={`nav-bubble-menu-list ${menuOpen}-menu`}>
         <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/">Home</a>
         <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/posts">Posts</a>
+        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/projects">Projects</a>
         <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/about">About</a>
+        <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/contact-me">Contact Me</a>
         <a className={`nav-bubble-menu-item ${menuOpen}-menu-item`} href="/credits">Credits/Attributions</a>
       </div>
     </div>
