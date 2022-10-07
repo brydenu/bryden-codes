@@ -29,6 +29,46 @@
     transform: translateY(-10px);
   }
 }
+
+@keyframes returnbottomline {
+  from {
+    opacity: 0;
+    transform:translateY(-10px);
+  }
+
+  17% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateback1 {
+  from {
+    transform: rotate(-45deg) translateY(10px) translateX(-5px);
+  }
+
+  to {
+    transform: rotate(0) translateY(0) translateX(0);
+  }
+}
+@keyframes rotateback2 {
+  from {
+    transform: rotate(45deg) translateX(3px);
+  }
+
+  to {
+    transform: rotate(0) translateX(0);
+  }
+}
 // WAIT 500 ms first (out of 1.5s)
 @keyframes navitemappear1 {
   from {
@@ -209,14 +249,18 @@
         animation-duration: 1s;
 
         .nav-bubble-icon-line {
+          animation-duration: 1s;
+          transform: none;
           &:nth-of-type(1) {
-            
+            animation-name: rotateback1;
           }
           &:nth-of-type(2) {
-
+            animation-name: rotateback2;
           }
           &:nth-of-type(3) {
-
+            animation-name: returnbottomline;
+            animation-duration: 1.2s;
+            opacity: 1s;
           }
         }
         
