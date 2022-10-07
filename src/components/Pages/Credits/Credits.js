@@ -59,6 +59,10 @@ export function Credits() {
           <td>Dark mode Nav Icon</td>
           <td><a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mIcxKBPLQ9mu/dark-mode">Dark mode</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></td>
         </tr>
+        <tr>
+          <td>"Hamburger" 3 lines (each line)</td>
+          <td><a target="_blank" rel="noreferrer" href="https://icons8.com/icon/78650/line">Line</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></td>
+        </tr>
         {/* <tr>
           <td></td>
           <td></td>
@@ -67,3 +71,4 @@ export function Credits() {
     </div>
   )
 }
+

@@ -5,11 +5,38 @@
   flex-flow: row nowrap;
   padding: 2rem;
 
+  &-body-head {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:fit-content;
+  }
+
+  &-title {
+    text-decoration: underline;
+    justify-self: center;
+    display: inline;
+    margin: 0;
+  }
+
+  &-menu {
+    display: none;
+
+    img {
+      max-width: 50px;
+    }
+
+    @include breakpoint(sm) {
+      display:inline;
+    }
+  }
+
 
   &-list {
     min-height: 100vh;
-    margin: 2rem;
-    margin-left: 6rem;
+    margin: 2rem 2rem 2rem 6rem;
     width: 85%;
 
     display: flex;
@@ -25,6 +52,19 @@
       &:hover {
         cursor: pointer;
       }
+    }
+
+  }
+  @include breakpoint(sm) {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    &-list {
+      margin: 0;
+      justify-content: center;
+      padding: 1rem 0;
+      width: unset;
     }
   }
 
@@ -49,6 +89,12 @@
       display: flex;
       flex-flow: column nowrap;
       gap: 1rem;
+    }
+
+    @include breakpoint(sm) {
+      margin: 0;
+      display: none;
+      width: unset;
     }
   }
 }

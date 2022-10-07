@@ -1,11 +1,12 @@
 import React from "react";
-import { Header, Footer, Navbar } from "components";
+import { Header, Footer, Navbar, NavBubble } from "components";
 
 export default function Layout({ headerProps, children }){
 
   return(
     <>
       <Navbar />
+      <NavBubble />
       <header>
         <Header {...headerProps} />
       </header>

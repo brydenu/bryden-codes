@@ -22,7 +22,7 @@
     letter-spacing: 3px;
 
     @include breakpoint(sm) {
-        
+        display: none;
     }
 }
 

@@ -1,0 +1,306 @@
+@use "styles" as *;
+
+@keyframes openmenu {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes closemenu {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes removebottomline {
+  from {
+    transform: translateY(0);
+  }
+  
+  to {
+    transform: translateY(-10px);
+  }
+}
+// WAIT 500 ms first (out of 1.5s)
+@keyframes navitemappear1 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  33% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  66% {
+    transform: translateY(-10px);
+    opacity: .5;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+// WAIT 700 ms
+@keyframes navitemappear2 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  41% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  71% {
+    transform: translateY(-10px);
+    opacity: .5;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes navitemappear3 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  47% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  73% {
+    transform: translateY(-10px);
+    opacity: .5;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes navitemappear4 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  52% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  76% {
+    transform: translateY(-10px);
+    opacity: .5;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-bubble {
+  display: none;
+
+  @include breakpoint(sm) {
+    display:block;
+    position: fixed;
+    top: 5px;
+    right:5px;
+    z-index: 1000;
+    border-radius: 4px;
+    padding: 1rem;
+    transition-duration: 300ms;
+
+    &-icon {
+      position:absolute;
+      right: 10px;
+      border-radius: 50%;
+      background-color: $primary;
+      max-width: 70px;
+      width: 70px;
+      max-height: 70px;
+      height: 70px;
+      z-index: 2000;
+
+      &-line {
+        max-width: 40px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 15px;
+
+        &:nth-of-type(1) {
+          top: 5px;
+        }
+        &:nth-of-type(2) {
+          top: 15px;
+        }
+        &:nth-of-type(3) {
+          top: 25px;
+        }
+      }
+    }
+
+    &-menu {
+      position: fixed;
+      right: 5px;
+      top: 5px;
+      z-index: 500;
+      transition-duration: 1s;
+
+      &-bg {
+        background-color: $primary;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        border-radius: 50%;
+        transition-duration: 900ms;
+        transition-delay: right 500ms top 500ms;
+      }
+
+      &-item {
+        font-size: pxToRem(36px);
+        position: fixed;
+        z-index: 2000;
+        text-decoration: none;
+        color: $primary;
+
+        &:nth-of-type(1) {
+          top: 30vh;
+          right: 5vw;
+        }
+        &:nth-of-type(2) {
+          top: 40vh;
+          right: 10vw;
+        }
+        &:nth-of-type(3) {
+          top: 50vh;
+          right: 15vw;
+        }
+        &:nth-of-type(4) {
+          top: 60vh;
+          right: 20vw;
+        }
+      }
+    }
+
+    &-closed {
+      &-icon {
+
+        animation-name: closemenu;
+        animation-duration: 1s;
+
+        .nav-bubble-icon-line {
+          &:nth-of-type(1) {
+            
+          }
+          &:nth-of-type(2) {
+
+          }
+          &:nth-of-type(3) {
+
+          }
+        }
+        
+      }
+
+      &-menu {
+        height: 1px;
+        width: 1px;
+        border-radius: 50%;
+
+        &-bg {
+          height: 1px;
+          width: 1px;
+        }
+
+        &-item {
+          visibility: hidden;
+        }
+      }
+  
+    }
+  
+    &-open {
+      &-icon {
+
+        animation-name: openmenu;
+        animation-duration: 1s;
+        background-color: transparent;
+
+        .nav-bubble-icon-line {
+          transition-duration: 300ms;
+          &:nth-of-type(1) {
+            transform: rotate(-45deg) translateY(10px) translateX(-5px);
+            transition-delay: 300ms;
+          }
+          &:nth-of-type(2) {
+            transform: rotate(45deg) translateX(3px);
+            transition-delay: 300ms;
+          }
+          &:nth-of-type(3) {
+            animation-name: removebottomline;
+            animation-duration: 300ms;
+            transition-delay: opacity 500ms;
+            opacity: 0;
+          }
+        }
+
+      }
+
+      &-menu {
+        display:block;
+        height: 100vh;
+        width: 100vw;
+        border-radius: 50%;
+
+        &-bg {
+          right: -100px;
+          top: -200px;
+          height: 50rem;
+          width: 50rem;
+        }
+
+        &-item {
+          color:white;
+          visibility: visible;
+          &:nth-of-type(1) {
+            animation-name: navitemappear1;
+            animation-duration: 1.5s;
+          }
+          &:nth-of-type(2) {
+            animation-name: navitemappear2;
+            animation-duration: 1.7s;
+          }
+          &:nth-of-type(3) {
+            animation-name: navitemappear3;
+            animation-duration: 1.9s;
+          }
+          &:nth-of-type(4) {
+            animation-name: navitemappear4;
+            animation-duration: 2.1s;
+          }
+        }
+      }
+  
+    }
+  }
+}

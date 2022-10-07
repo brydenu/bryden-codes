@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { PostPreview } from "components";
 // import { getAllPosts } from "hooks";
 import data from "data/dummydata/posts.json";
+import menuIcon from "images/icons/menu-60.png";
 import "./Posts.scss";
 
 export function Posts() {
@@ -23,6 +24,10 @@ export function Posts() {
 
     return (
         <div className="posts">
+            <div className={`posts-body-head ${window.scrollY > 430 ? "posts-body-head-sticky" : ""}`}>
+                <h2 className="posts-title">Posts</h2>
+                <div className="posts-menu"><img src={menuIcon} alt="Menu" /></div>
+            </div>
             <div className="posts-list">
                 {showing.posts.map((post) => (
                     <PostPreview {...post} />
