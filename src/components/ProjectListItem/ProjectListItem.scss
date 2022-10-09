@@ -1,0 +1,88 @@
+@use "styles" as *;
+
+.pli {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid $light;
+
+  &-title {
+    font-size: $h3-font-size;
+    font-weight: bold;
+    margin: 0 0 2rem;
+  }
+
+  &-tech {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  &-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &-image {
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    background-color: $primary;
+    color: $light;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    transition-duration: 300ms;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: $secondary;
+      cursor: pointer;
+    }
+  }
+
+  &-reduced {
+    .pli {
+      &-info {
+        max-width: 50%;
+      }
+
+      &-image {
+        max-width: 50%;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      button {
+
+      }
+    }
+  }
+
+  &-expanded {
+    .pli {
+      &-info {
+        max-width: 50%;
+      }
+
+      &-image {
+        max-width: 50%;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      button {
+
+      }
+    }
+  }
+}

@@ -6,3 +6,5 @@ export { Header } from "./Header/Header";
 export { Navbar } from "./Navbar/Navbar";
 export { NavBubble } from "./NavBubble/NavBubble";
 export { PostPreview } from "./PostPreview/PostPreview";
+export { ProjectListItem } from "./ProjectListItem/ProjectListItem";
+export { Tag } from "./Tag/Tag";

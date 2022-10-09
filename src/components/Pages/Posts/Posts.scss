@@ -9,9 +9,14 @@
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height:fit-content;
+    
+    @include breakpoint(sm) {
+      justify-content: space-between;
+
+    }
   }
 
   &-title {
@@ -45,12 +50,23 @@
     align-items:center;
 
     &-show-btn {
+      font-size: pxToRem(26px);
       border-radius: 4px;
       background-color: rgba(60,60,60,.5);
-      padding: 5px 1rem;
+      padding: 10px 1rem;
+      margin: .5rem;
+      transition-duration: 300ms;
+      text-align: center;
 
       &:hover {
         cursor: pointer;
+        color: white;
+        background-color: rgba(150,150,150,.7);
+      }
+
+      &-group {
+        min-height:  100px;
+        max-height: 200px;
       }
     }
 

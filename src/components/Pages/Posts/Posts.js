@@ -24,24 +24,28 @@ export function Posts() {
 
     return (
         <div className="posts">
-            <div className={`posts-body-head ${window.scrollY > 430 ? "posts-body-head-sticky" : ""}`}>
-                <h2 className="posts-title">Posts</h2>
-                <div className="posts-menu"><img src={menuIcon} alt="Menu" /></div>
-            </div>
-            <div className="posts-list">
-                {showing.posts.map((post) => (
-                    <PostPreview {...post} />
-                ))}
-                {posts.length > showing.num ? (
-                <div className="posts-list-show-btn" onClick={handleShowMore}>
-                    Show More
+            <div className="posts-body">
+                <div className={`posts-body-head`}>
+                    <h2 className="posts-title">Posts</h2>
+                    <div className="posts-menu"><img src={menuIcon} alt="Menu" /></div>
                 </div>
-                ) : (
-                    <div className="posts-list-show-btn" onClick={handleShowLess}>
-                        Show Less
+                <div className="posts-list">
+                    {showing.posts.map((post) => (
+                        <PostPreview {...post} />
+                    ))}
+                    <div className="posts-list-show-btn-group">
+                        {showing.num > 5 && (
+                            <div className="posts-list-show-btn" onClick={handleShowLess}>
+                                Show Less
+                            </div>
+                        )}
+                        {posts.length > showing.num && (
+                            <div className="posts-list-show-btn" onClick={handleShowMore}>
+                                Show More
+                            </div>
+                        )}
                     </div>
-                )
-                }
+                </div>
             </div>
             <div className="posts-index">
                 <div className="posts-index-title">
