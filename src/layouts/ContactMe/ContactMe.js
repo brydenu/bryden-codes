@@ -9,7 +9,7 @@ export default function ContactMePage() {
   const content = <div>I'm usually available and will respond ASAP through LinkedIn, Twitter, or the message system below. I'm always open to new opportunities, connections, and/or feedback. So don't be shy, let's connect!</div>
 
 
-  const headerProps = { title, subtitle, content };
+  const headerProps = { type: "contact-me", title, subtitle, content };
   return (
     <Layout headerProps={headerProps}>
       <Contact />

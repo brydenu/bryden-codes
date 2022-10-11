@@ -7,9 +7,7 @@ export default function Layout({ headerProps, children }){
     <>
       <Navbar />
       <NavBubble />
-      <header>
-        <Header {...headerProps} />
-      </header>
+      <Header {...headerProps} />
       <main>
         {children}
       </main>

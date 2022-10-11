@@ -41,6 +41,14 @@ export function Credits() {
           <td>Person out of frame using laptop with crossed legs and coffee (/about header image)</td>
           <td><a href="https://www.freepik.com/free-vector/online-learning_1250643.htm#page=3&query=programmer&position=25&from_view=search">Freepik</a></td>
         </tr>
+        <tr>
+          <td></td>
+          <td><a href="https://www.freepik.com/free-vector/retro-mailbox-background-flat-design_1084177.htm#query=mail&position=47&from_view=search&track=sph">Freepik</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="https://www.freepik.com/free-vector/black-wallpaper-with-motion-lines-background_12572933.htm#query=background&position=28&from_view=search&track=sph">Image by starline</a> on Freepik</td>
+        </tr>
         {/* <tr>
           <td></td>
           <td><a href="">Freepik</a></td>

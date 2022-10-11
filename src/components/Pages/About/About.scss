@@ -1,1 +1,41 @@
 @use "styles" as *;
+
+
+.about {
+  padding: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: $dark;
+  background-color: $light;
+}
+
+h3 {
+  border-bottom: 1px solid $primary;
+}
+
+.overview {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  div {
+    margin: 1rem 0;
+  }
+}
+
+.experience {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.education {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.extra {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
