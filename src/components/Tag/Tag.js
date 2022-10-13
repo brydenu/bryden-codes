@@ -9,5 +9,5 @@ export function Tag({ name }) {
     console.log("class?", e.target.classList)
   }
 
-  return (<div className="tag" data-tag-value={name} onClick={handleClick}>{name}</div>)
+  return (<div className="tag" data-tag-name={name} onClick={handleClick}>{name}</div>)
 }

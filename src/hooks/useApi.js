@@ -14,6 +14,15 @@ export async function sendEmail(route, reqBody) {
 }
 
 export async function getAllPosts() {
-  const url = BASE_URL + "/posts";
+  const url = BASE_URL + "/blog";
   return axios.get(url, {}, config);
+}
+
+export async function getPost(id) {
+  const url = BASE_URL + "/blog/post?id=" + id;
+  return axios.get(url, {}, config);
+}
+
+export function useApi() {
+  return { sendEmail, getAllPosts, getPost };
 }
