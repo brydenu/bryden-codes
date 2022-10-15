@@ -12,6 +12,7 @@
 
 h3 {
   border-bottom: 1px solid $primary;
+  font-size: $h3-font-size;
 }
 
 .overview {
@@ -25,16 +26,19 @@ h3 {
 }
 
 .experience {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 .education {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 .extra {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

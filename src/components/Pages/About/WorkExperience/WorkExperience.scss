@@ -1,0 +1,128 @@
+@use "styles" as *;
+
+.work-exp {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid $dark;
+  border-radius: 4px;
+  gap: 1rem;
+  max-height: 800px;
+  height: 500px;
+  transition-delay: max-height 1s, height 1s;
+  transition-duration: max-height 1s, height 1s;
+
+  &.hidden {
+    height: 219px;
+    max-height: 220px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: $primary;
+  }
+
+  &-header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .2rem;
+  }
+
+  &-title {
+    font-size: pxToRem(50px);
+    font-weight: bold;
+    transition-duration: 1s;
+  }
+
+  &-company {
+    font-size: pxToRem(22px);
+    font-style: italic;
+  }
+  
+  &-tenure {
+    font-size: pxToRem(18px);
+    color: grey;
+    font-style: italic;
+  }
+
+  &-skills {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+
+    &-title {
+      font-size: pxToRem(20px);
+      font-weight: bold;
+
+      &.hidden {
+        max-height: 0;
+        opacity: 0;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      
+      &-hard, &-soft {
+        width: 100%;
+        padding: .25rem;
+        border-radius: 10px;
+        transition-duration: 500ms;
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
+    
+  }
+
+  &-skill {
+
+    &-hard, &-soft {
+      padding: 5px 8px;
+      margin: 2px;
+      border-radius: 10px;
+      color: $light;
+    }
+
+    &-hard {
+      background-color: $primary;
+    }
+
+    &-soft {
+      background-color: $secondary;
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+
+    ul {
+      text-align: left;
+    }
+
+    li {}
+
+    &.hidden {
+      max-height: 1px;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+
+  &-label {}
+
+  &-summary {}
+}

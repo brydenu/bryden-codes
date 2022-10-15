@@ -1,0 +1,64 @@
+@use "styles" as *;
+
+.edu {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid $dark;
+  border-radius: 4px;
+  gap: 1rem;
+
+  &-header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .2rem;
+  }
+
+  &-institution {
+    font-size: pxToRem(29px);
+    font-weight: bold;
+  }
+
+  &-pursuing {
+    font-size: pxToRem(22px);
+    font-style: italic;
+  }
+  
+  &-tenure {
+    font-size: pxToRem(18px);
+    color: grey;
+    font-style: italic;
+  }
+
+  &-skills {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &-skill {
+    padding: 5px 8px;
+    margin: 2px;
+    border-radius: 10px;
+    color: $light;
+    background-color: $primary;
+  }
+
+  &-body {
+
+  }
+
+  &-summary {
+
+  }
+
+  &-reflection {
+
+  }
+}

@@ -1,7 +1,11 @@
 import React from "react";
+import { Education, Personal, WorkExperience } from "./aboutComponents";
+import data from "data/about.json";
 import "./About.scss";
 
 export function About() {
+    const { workExperience, education, personal } = data;;
+
     return (
         <div className="about">
             <div className="greeting">
@@ -22,9 +26,10 @@ export function About() {
                     realized this is the career path I wanted to embark on!
                 </div>
                 <div>
-                    Once I decided a future with code sounded right for me,
-                    I enrolled in the Arizona State University's software engineering program. At the time I was working for Starbucks,
-                    so I made use of their tuition reimbursement program through ASU.
+                    Once I decided a future with code sounded right for me, I enrolled in the 
+                    Arizona State University's software engineering program. At the time I was working 
+                    for Starbucks, so I made use of their tuition reimbursement program through ASU, saving me
+                    a lot of money that I didn't have, giving me an affordable route to a college education. 
                 </div>
                 <div>
                     At the start, I very much enjoyed the education I was getting! Some of the first classes I was able
@@ -62,13 +67,15 @@ export function About() {
             </div>
             <div className="experience">
                 <h3>Work Experience</h3>
-                <div></div>
+                {workExperience.map((jobDetails) => (<WorkExperience {...jobDetails} key={jobDetails.code} />))}
             </div>
             <div className="education">
                 <h3>Education</h3>
+                {education.map((eduDetails) => (<Education {...eduDetails} key={eduDetails.code} />))}
             </div>
             <div className="extra">
                 <h3>Personal Life</h3>
+                {personal.map((personalDetails) => (<Personal {...personalDetails} key={personalDetails.code} />))}
             </div>
         </div>
     );

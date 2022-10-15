@@ -1,0 +1,146 @@
+{
+  "workExperience": [
+    {
+      "code": "ao",
+      "company": "AgencyOf",
+      "title": "Software Developer",
+      "start": "August 2022",
+      "end": "September 2022",
+      "tasks": [
+        ""
+      ],
+      "developedSkills": {
+        "hard": [
+          "PHP",
+          "JavaScript",
+          "React",
+          "NextJS",
+          "Laravel",
+          "Vercel",
+          "Bootstrap"
+        ],
+        "soft": [
+          "Collaborative Development",
+          "Time Management"
+        ]
+      },
+      "summary": "Summary for working at AgencyOf"
+    },
+    {
+      "code": "hsarx",
+      "company": "HSARx",
+      "title": "Software Developer",
+      "start": "April 2022",
+      "end": "August 2022",
+      "tasks": [
+        ""
+      ],
+      "developedSkills": {
+        "hard": [
+          "PHP",
+          "React",
+          "API Development",
+          "Laravel",
+          "MySQL",
+          "Sass",
+          "Bootstrap"
+        ],
+        "soft": [
+          "Collaborative Development",
+          "Time Management"
+        ]
+      },
+      "summary": "Summary for working at HSARx"
+    },
+    {
+      "code": "sbux",
+      "company": "Starbucks",
+      "title": "Shift Supervisor / Barista / Baker / Bartender",
+      "start": "May 2017",
+      "end": "November 2021",
+      "tasks": [
+        "Make Coffee",
+        "Talk to Customers"
+      ],
+      "developedSkills": {
+        "hard": [],
+        "soft": [
+          "Communication",
+          "Social",
+          "Prioritization",
+          "Problem Solving",
+          "Time Management"
+        ]
+      },
+      "summary": "Summary for working at Starbucks"
+    }
+  ],
+  "education": [
+    {
+      "code": "sb",
+      "institution": "Springboard",
+      "pursuing": "Software Engineering Career Track (Boot Camp)",
+      "start": "September 2020",
+      "end": "December 2021",
+      "learnedSkills": [
+        "JavaScript",
+        "Python",
+        "React",
+        "Node",
+        "PostgreSQL",
+        "API Development",
+        "HTTP",
+        "Flask",
+        "Express",
+        "DSAs - Data Structures and Algorithms",
+        "Git",
+        "jQuery",
+        "Bootstrap",
+        "Jasmine Testing",
+        "OOP - Object Oriented Programming",
+        "ORM - Object Relational Mapping",
+        "React Router"
+      ],
+      "summary": "700+ hours of hands-on course material, with 1:1 industry expert mentor oversight, and completion of 4 in-depth portfolio projects. Mastered skills in front-end web development, back-end web development, databases, and data structures and algorithms.",
+      "reflection": ""
+    },
+    {
+      "code": "asu",
+      "institution": "",
+      "pursuing": "",
+      "start": "",
+      "end": "",
+      "learnedSkills": [],
+      "summary": "",
+      "reflection": ""
+    },
+    {
+      "code": "sfcc",
+      "institution": "",
+      "pursuing": "",
+      "start": "",
+      "end": "",
+      "learnedSkills": [],
+      "summary": "",
+      "reflection": ""
+    }
+  ],
+  "personal": [
+    {
+      "code": "test",
+      "title": "title",
+      "subtitle": "subtitle",
+      "description": "description",
+      "extraContent": [
+        {
+          "type": "text",
+          "content": "extraContent1"
+        },
+        {
+          "type": "text",
+          "content": "extraContent2"
+        }
+      ]
+    }
+  ]
+}
